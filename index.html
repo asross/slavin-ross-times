@@ -1,0 +1,118 @@
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="public.css">
+    <title>The Slavin-Ross Times</title>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+<div class="head">
+    <div class="headerobjectswrapper">
+      <div class="weatherforcastbox">Merry Christmas!!!<br>Love, Andrew</div>
+        <header>The Slavin-Ross Times</header>
+        <div class='controls'>
+          <label>
+            <select id='sort'>
+              <option value='random'>Random order</option>
+              <option value='chrono'>Chronological</option>
+              <option value='title'>Sort by title</option>
+              <option value='paper'>Sort by paper</option>
+              <option value='author'>Sort by author</option>
+            </select>
+          </label>
+        </div>
+    </div>
+    <div class="subhead">Washington, DC; Sunday, December 25, 2022</div>
+</div>
+
+<div class="content">
+  <div class="columns">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+  </div>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script>
+function articleHtml(a) {
+  return `
+    <article>
+      <div class='head'>
+
+        <span class="headline hl1">
+          ${a.title}
+        </span>
+
+        <p>
+         <span class="headline hl6">${a.author} for ${a.org}, ${a.date}</span>
+        </p>
+      </div>
+
+      ${a.text}
+    </article>
+  `;
+}
+
+function getJSON(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = callback;
+    xhr.send();
+}
+
+function strcomp(a, b) {
+   var nameA = a.toLowerCase(), nameB = b.toLowerCase();
+   if (nameA < nameB) //sort string ascending
+    return -1;
+   if (nameA > nameB)
+    return 1;
+   return 0;
+}
+
+$(document).ready(() => {
+    const columns = Array.from(document.getElementsByClassName('column'));
+
+    $.getJSON('articles.json', articles => {
+        window.articles = articles;
+
+        articles.sort(() => Math.random() - 0.5);
+
+        const renderArticles = () => {
+          columns.forEach(column => {
+              $(column).html('');
+          });
+          articles.forEach((article, i) => {
+              const column = $(columns[i % columns.length]);
+              column.append(articleHtml(article));
+          });
+        }
+
+        renderArticles();
+
+        $('#sort').change(ev => {
+            const order = $(ev.currentTarget).val();
+            console.log(order);
+            if (order == 'random') {
+              articles.sort(() => Math.random() - 0.5);
+            } else if (order == 'chrono') {
+              articles.sort((a,b) => Date.parse(a.date) - Date.parse(b.date));
+            } else if (order == 'author') {
+              articles.sort((a,b) => strcomp(a.author,b.author));
+            } else if (order == 'title') {
+              articles.sort((a,b) => strcomp(a.title,b.title));
+            } else if (order == 'paper') {
+              articles.sort((a,b) => strcomp(a.org,b.org));
+            }
+            renderArticles();
+        });
+    });
+});
+</script>
+</html>
