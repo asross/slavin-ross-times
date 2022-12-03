@@ -40,6 +40,9 @@ p {
 .controls, .weatherforcastbox {
   position: absolute;
   bottom: 0;
+}
+
+#sort, .weatherforcastbox {
   border: 3px double;
   padding: 10px 15px 10px 15px;
   line-height: 20px;
@@ -58,7 +61,6 @@ p {
   font-size: 14px;
   background: #f9f7f1;
   color: #2f2f2f;
-  border: none;
 }
 
 .content {
@@ -78,6 +80,7 @@ p {
   vertical-align: top;
   margin-bottom: 50px;
   border-left: 1px solid #2f2f2f;
+  border-right: 1px solid #2f2f2f;
 }
 
 .column:first-child {
