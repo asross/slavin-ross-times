@@ -61,6 +61,7 @@ p {
   font-size: 14px;
   background: #f9f7f1;
   color: #2f2f2f;
+  border-radius: 0;
 }
 
 .content {
@@ -71,12 +72,17 @@ p {
   margin: 30px 2% 0 2%;
 }
 
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
 .column {
   font-size: 14px;
   line-height: 20px;
-  width: 17.5%;
-  display: inline-block;
-  padding: 0 1% 0 1%;
+  width: calc(20% - 1px);
   vertical-align: top;
   margin-bottom: 50px;
   border-left: 1px solid #2f2f2f;
@@ -179,15 +185,21 @@ p {
   width: 100%;
 }
 
+@media only all and (max-width: 1350px) {
+  .column {
+    width: calc(25% - 1px);
+  }
+}
+
 @media only all and (max-width: 1200px) {
   .column {
-    width: 31%;
+    width: calc(33% - 1px);
   }
 }
 
 @media only all and (max-width: 900px) {
   .column {
-    width: 47%;
+    width: calc(50% - 1px);
   }
 }
 
@@ -219,6 +231,10 @@ p {
   .weatherforcastbox {
     display: none;
   }
+}
+
+article {
+  padding: 0 1em;
 }
 
 article + article {

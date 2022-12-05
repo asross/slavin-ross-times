@@ -17,7 +17,6 @@
               <option value='random'>Random order</option>
               <option value='chrono'>Chronological</option>
               <option value='title'>Sort by title</option>
-              <option value='paper'>Sort by paper</option>
               <option value='author'>Sort by author</option>
             </select>
           </label>
@@ -28,11 +27,6 @@
 
 <div class="content">
   <div class="columns">
-    <div class="column"></div>
-    <div class="column"></div>
-    <div class="column"></div>
-    <div class="column"></div>
-    <div class="column"></div>
   </div>
 </div>
 </body>
@@ -59,14 +53,6 @@ function articleHtml(a) {
   `;
 }
 
-function getJSON(url, callback) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.responseType = 'json';
-    xhr.onload = callback;
-    xhr.send();
-}
-
 function strcomp(a, b) {
    var nameA = a.toLowerCase(), nameB = b.toLowerCase();
    if (nameA < nameB) //sort string ascending
@@ -77,28 +63,36 @@ function strcomp(a, b) {
 }
 
 $(document).ready(() => {
-    const columns = Array.from(document.getElementsByClassName('column'));
+    const $columns = $('.columns');
 
     $.getJSON('articles.json', articles => {
-        window.articles = articles;
-
         articles.sort(() => Math.random() - 0.5);
 
-        const renderArticles = () => {
-          columns.forEach(column => {
-              $(column).html('');
-          });
+        const renderArticles = (forceRerender) => {
+          const width = $(window).width();
+          const numColumns = [0, 600, 900, 1200, 1350].filter(breakpoint => width > breakpoint).length;
+
+          if (!forceRerender && $('.column').length == numColumns) {
+            return;
+          }
+
+          $columns.html('');
+
+          for (let i = 0; i < numColumns; i++ )
+            $columns.append("<div class='column'>");
+
+          const columns = Array.from($('.column'));
+
           articles.forEach((article, i) => {
               const column = $(columns[i % columns.length]);
               column.append(articleHtml(article));
           });
         }
 
-        renderArticles();
+        renderArticles(true);
 
         $('#sort').change(ev => {
             const order = $(ev.currentTarget).val();
-            console.log(order);
             if (order == 'random') {
               articles.sort(() => Math.random() - 0.5);
             } else if (order == 'chrono') {
@@ -107,10 +101,16 @@ $(document).ready(() => {
               articles.sort((a,b) => strcomp(a.author,b.author));
             } else if (order == 'title') {
               articles.sort((a,b) => strcomp(a.title,b.title));
-            } else if (order == 'paper') {
-              articles.sort((a,b) => strcomp(a.org,b.org));
             }
-            renderArticles();
+            renderArticles(true);
+        });
+
+        let windowWidth = $(window).width();
+        $(window).resize(() => {
+            if ($(window).width() != windowWidth) {
+                windowWidth = $(window).width();
+                renderArticles(false);
+            }
         });
     });
 });
