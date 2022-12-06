@@ -23,7 +23,6 @@
           </label>
         </div>
     </div>
-    <div id='widths'></div>
     <div class="subhead">Washington, DC; Sunday, December 25, 2022</div>
 </div>
 
@@ -78,8 +77,6 @@ $(document).ready(() => {
           if (!forceRerender && $('.column').length == numColumns) {
             return;
           }
-
-          $('#widths').append(`${width};`);
 
           $columns.html('');
 
