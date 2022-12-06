@@ -182,11 +182,11 @@ p {
   margin: 0 auto;
 }
 
-.column .figure {
+.column figure {
   margin: 0 0 20px;
 }
 
-.column .figcaption {
+.column figcaption {
   font-style: italic;
   font-size: 12px;
 }
