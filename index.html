@@ -15,10 +15,10 @@
         <div class='controls'>
           <label>
             <select id='sort'>
-              <option value='random'>Random order</option>
               <option value='chrono'>Chronological</option>
               <option value='title'>Sort by title</option>
               <option value='author'>Sort by author</option>
+              <option value='random'>Random order</option>
             </select>
           </label>
         </div>
@@ -68,7 +68,7 @@ $(document).ready(() => {
     const $columns = $('.columns');
 
     $.getJSON('articles.json', articles => {
-        articles.sort(() => Math.random() - 0.5);
+        articles.sort((a,b) => Date.parse(a.date) - Date.parse(b.date));
 
         const renderArticles = (forceRerender) => {
           const width = $(window).width();
