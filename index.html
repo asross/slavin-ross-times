@@ -23,6 +23,7 @@
           </label>
         </div>
     </div>
+    <div id='widths'></div>
     <div class="subhead">Washington, DC; Sunday, December 25, 2022</div>
 </div>
 
@@ -78,6 +79,8 @@ $(document).ready(() => {
             return;
           }
 
+          $('#widths').append(`${width};`);
+
           $columns.html('');
 
           for (let i = 0; i < numColumns; i++ )
@@ -109,9 +112,10 @@ $(document).ready(() => {
 
         let windowWidth = $(window).width();
         $(window).resize(() => {
-            if ($(window).width() != windowWidth) {
+            if (Math.abs($(window).width() - windowWidth) > 1) {
                 windowWidth = $(window).width();
-                renderArticles(false);
+                if (windowWidth)
+                  renderArticles(false);
             }
         });
     });
