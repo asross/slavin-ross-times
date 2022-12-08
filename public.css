@@ -23,9 +23,10 @@ header {
   font-size: 80px;
   text-transform: uppercase;
   line-height: 72px;
-  max-width: calc(95% - 16rem);
   margin: 0 auto;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 p {
@@ -50,8 +51,13 @@ p {
 }
 
 .controls, .weatherforcastbox {
-  position: absolute;
-  bottom: 0;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Droid Serif', serif;
+  color: #2f2f2f;
+  font-weight: normal;
+  text-transform: none;
+  align-self: flex-end;
 }
 
 #sort, .weatherforcastbox {
@@ -216,6 +222,22 @@ p {
   }
 }
 
+@media only all and (max-width: 1400px) {
+  header {
+    font-size: 70px;
+    line-height: 64px;
+  }
+}
+
+@media only all and (max-width: 775px) {
+  header {
+    text-align: left;
+  }
+  .weatherforcastbox {
+    display: none;
+  }
+}
+
 @media only all and (max-width: 600px) {
   .column {
     width: 100%;
@@ -227,22 +249,19 @@ p {
   }
 
   header {
-    font-size: 60px;
-    line-height: 54px;
-    overflow: hidden;
-    margin: 0;
-    margin-bottom: 20px;
-    max-width: calc(100% - 6rem);
-    text-align: left;
+    font-size: 50px;
+    line-height: 44px;
+    display: block;
   }
 
   .controls {
-    top: 1rem;
-    bottom: initial;
+    vertical-align: top;
+    margin-top: 5px;
   }
 
-  .weatherforcastbox {
-    display: none;
+  #sort {
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 }
 
