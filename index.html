@@ -83,12 +83,18 @@ $(document).ready(() => {
           $columns.html('');
 
           for (let i = 0; i < numColumns; i++ )
-            $columns.append("<div class='column'>");
+             $columns.append(`<div class='column' data-index='${i}'>`);
 
           const columns = Array.from($('.column'));
 
           articles.forEach((article, i) => {
-              const column = $(columns[i % columns.length]);
+              // Add article to shortest column
+              columns.sort((a, b) => {
+                const h1 = $(a).height() + parseInt($(a).data('index'));
+                const h2 = $(b).height() + parseInt($(b).data('index'));
+                return h1 - h2;
+              });
+              const column = $(columns[0]);
               column.append(articleHtml(article));
           });
         }
