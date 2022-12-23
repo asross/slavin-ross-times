@@ -1,6 +1,10 @@
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: 'Droid Serif', serif;
-  font-size: 14px;
+  font-size: 1rem;
   color: #2f2f2f;
   background-color: #f9f7f1;
   overflow: hidden;
@@ -15,6 +19,22 @@ main {
   height: calc(100vh - 16px);
   width: calc(100vw - 16px);
   overflow-y: scroll;
+}
+
+@page {
+  margin-top: 0.67in;
+  margin-bottom: 0.67in;
+  margin-left: 0.67in;
+  margin-right: 0.67in;
+}
+
+@media print {
+  body {
+    overflow: auto;
+  }
+  main {
+    overflow-y: visible;
+  }
 }
 
 header {
@@ -52,7 +72,7 @@ p {
 
 .controls, .weatherforcastbox {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1rem;
   font-family: 'Droid Serif', serif;
   color: #2f2f2f;
   font-weight: normal;
@@ -63,7 +83,7 @@ p {
 #sort, .weatherforcastbox {
   border: 3px double;
   padding: 10px 15px 10px 15px;
-  line-height: 20px;
+  line-height: 1.42857142857rem;
 }
 
 .controls {
@@ -76,7 +96,7 @@ p {
 
 #sort {
   font-family: 'Droid Serif', serif;
-  font-size: 14px;
+  font-size: 1rem;
   background: #f9f7f1;
   color: #2f2f2f;
   border-radius: 0;
@@ -88,7 +108,7 @@ p {
   line-height: 0;
   word-spacing: -.31em;
   display: inline-block;
-  margin: 30px 2% 0 2%;
+  margin: 30px 5px 0 5px;
 }
 
 .columns {
@@ -99,8 +119,8 @@ p {
 }
 
 .column {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.42857142857rem;
   width: calc(20% - 1px);
   vertical-align: top;
   margin-bottom: 50px;
@@ -130,14 +150,14 @@ p {
 
 .column .headline.hl1 {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2.14285714286rem;
   text-transform: uppercase;
   padding: 10px 0 10px 0;
 }
 
 .column .headline.hl6 {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.28571428571rem;
   box-sizing: border-box;
   padding: 10px 0 10px 0;
 }
@@ -162,8 +182,8 @@ p {
 
 .column .citation {
   font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 2.57142857143rem;
+  line-height: 3.14285714286rem;
   text-align: center;
   font-weight: 400;
   display: block;
@@ -194,7 +214,7 @@ p {
 
 .column figcaption {
   font-style: italic;
-  font-size: 12px;
+  font-size: 0.85714285714rem;
 }
 
 .media {
@@ -249,8 +269,8 @@ p {
   }
 
   header {
-    font-size: 50px;
-    line-height: 44px;
+    font-size: 3.57142857143rem;
+    line-height: 3.14285714286rem;
     display: block;
   }
 
