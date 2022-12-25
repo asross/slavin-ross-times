@@ -1,15 +1,12 @@
-ee oS
+author: Barbara Slavin
+org: the Economist
+title: Yasser Arafat comes to town
+date: September 18, 1993
+ready: true
 
-INTERNATIONAL
+---
 
-Yasser Arafat comes to town
-
-FROMA CORRESPONDENT IN WASHINGTON, DC
-
-Star in the Senate
-
-VEN Henry Kissinger, who fixed Middle
-
+WASHINGTON &mdash; Even Henry Kissinger, who fixed Middle
 Eastern truces in the days before Arabs
 and Israelis would lift a telephone to each
 other, dabbed his eyes. True, Yitzhak Rabin,
@@ -40,9 +37,6 @@ and optimism and promised active Ameri-
 can support in the days ahead.
 
 A big element in this support is reassur-
-
-THE ECONOMIST SEPTEMBER 18TH 1993
-
 ing sceptical Israelis—and worried Ameri-
 can Jews—that Israel’s agreement to with-
 draw from Gaza and Jericho, and allow a
@@ -74,7 +68,6 @@ stay in Washington for their own negotia-
 tions. A framework for an Israel-Jordan
 peace treaty, essentially completed a year
 ago but held up by Jordan until the break-
-
 through with the PLO, was signed at the
 State Department on September 14th. Mr
 Clinton rewarded King Hussein with a
@@ -107,15 +100,14 @@ dards of this power-hungry city.
 
 It used to be thought that it would be
 America that would persuade Israel to ac-
-cept the PLo. In fact it was the other way
+cept the PLO. In fact it was the other way
 about. So far America has only resumed the
 “dialogue” begun in 1988 and broken off in
 1990; Palestinian interests are represented
 in Washington by a Palestine Affairs Centre
 staffed by American residents. But here was
 Mr Arafat being received at the White
-House—where he held an unscheduled téte-
-4-téte with Mr Clinton in the basement map
+House—where he held an unscheduled téte-a-téte with Mr Clinton in the basement map
 room—and then passing on to the State De-
 partment, Congress and “Larry King Live”.
 Asked at a National Press Club lunch when
@@ -142,9 +134,9 @@ sured only in millions, not the billions
 doled out to Israel and Egypt ever since they
 signed their peace treaty in 1979. But Wash-
 ington will help to solicit contributions
+from Europe, Japan and wealthy Arabs.
 
-oe Sa ie eT ==
-eels ip as, wu 3
-c sparse acer a shel ney 4X
-UB Res alia eae aaa ‘A i Be '
+On the evening of the signing ceremony, the American Jewish Congress and the National Association of Arab Americans cosponsored a reception at which Arabs and Jews chatted over the buffet tables and listened to Hebrew and Arabic folksongs.
+They were told by Nabil Shaath, an American-educated businessman who has long been an adviser to Mr Arafat, that they had the choice of making the new Palestinian entity either a Singapore or a Somalia.
 
+The first alternative is, of course, nonsense: there are still miles to go, even if local die-hards do not sabotage the effort, before Mr Arafat’s new sub-state escapes the living standards of the third world. But at least some Jewish Americans, who have supported Israel through thick and thin, are beginning to see the reasons for supporting its ex-enemies as well.
