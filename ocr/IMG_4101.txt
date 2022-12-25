@@ -1,24 +1,27 @@
-' A Bold Trip |
-: Of Uncertain
-_ Promise
+author: Barbara Slavin
+title: A Bold Trip Of Uncertain Promise
+org: New York Times
+date: November 20, 1977
+ready: true
+
+---
 
 The idea was breathtakingly
 simple, the symbolism staggering,
-the risks ‘enormous: President
-Anwar el-Sadat of Egypt would
-. go to the Jewish state to put his
+the risks enormous: President
+Anwar el-Sadat of Egypt would go to the Jewish state to put his
 case before the Parliament of the
-‘Israeli people. And so he has.
+Israeli people. And so he has.
 
 Neither Mr. Sadat, nor anyone
 else, can yet know what his visit
-_ will mean for Middle East peace—
+will mean for Middle East peace&mdash;
 or for his own political and per-
 sonal fortunes. But the Egyptian
 President has by his presence in
 Jerusalem implicitly recognized
 Israel's existence and, as one
-. Israeli commented, “the whole
+Israeli commented, “the whole
 atmosphere has been psychologi-
 cally transformed.”
 
@@ -28,27 +31,15 @@ the trip, arranged with astonishing
 speed thanks in part to the press
 and American television, appeared
 to have caught all parties to Mid-
-_ die East diplomacy, including
-
+dle East diplomacy, including
 Washington, by surprise.
 
 Though popular opinion in Cairo
-- seemed to support Mr. Sadat, the
+seemed to support Mr. Sadat, the
 reaction from many Arab leaders,
 including members of Mr. Sadat’s
-- Cabinet, ranged from outrage to
-
-ituation
-foreign
-| on the
-stability.
-vicious
-
-Se
-
-wR
-
-four years, Ismail Fahmy, re-
+Cabinet, ranged from outrage to dismay
+His Foreign Minister of four years, Ismail Fahmy, re-
 signed. The leader of Syria, Hafez
 al-Assad, anxious that despite Mr.
 Sadat’s disclaimers Egypt was
@@ -57,12 +48,9 @@ rael, called the initiative danger-
 ous and declared yesterday a day
 of mourning. The Palestine Libera-
 tion Organization, waiting for the
-
-dismay. His Foreign Minister of:
-
 Syrian reaction before comment-
 ing in full, then replied with pre-
-dictable anger. i
+dictable anger.
 
 Some of the reaction was vio-
 lent, with bombings and demon-
@@ -73,7 +61,7 @@ Far more important, however,
 was the response from Saudi Ara-
 bia, bankroller to the belligerent
 Arab states and Egypt in particu-
-lar. After initia] silence, the Sau-
+lar. After initial silence, the Sau-
 dis, who have often acted as me-
 diators' in inter-Arab- quarrels,
 expressed concern that Mr. Sadat
@@ -85,9 +73,7 @@ unity.” The Soviet Union, fearing
 that once again it would be by-
 passed in ‘Middle East diplomacy,
 warned that Mr, Sadat’s “flirta-
-
-_tion’’ with Israel could lead to
-
+_ion’’ with Israel could lead to
 war.
 
 In Washington, Carter Adminis-
@@ -111,15 +97,11 @@ United States officials said they
 were urging Israel to compromise
 on a formula for Palestinian rep-
 resentation at a Geneva confer-
-
 ence, the main procedural question
-
 that has stalled Middle East di-
-plomacy for months,
+plomacy for months.
+
 Although the Sadat visit has, for
-
-{
-
 the moment, eclipsed all other ini-
 tiatives, the principal obstacles to
 peace remain. At the core, as
@@ -129,14 +111,14 @@ refuse to even contemplate the
 creation of a Palestinian state on
 the West Bank ef Jordan which
 it considers Israel’s by biblical
-right. oo
+right.
 
 Unlike most meetings between
 heads of state, where the texts of
 treaties have been prepared by
 subordinates in advance and the
 leaders need only initial them, Mr.
-Sadat’s discussions -with Prime
+Sadat’s discussions with Prime
 Minister Menahem Begin of Israel
 are completely uncharted. Yet,
 whatever the substance of the
@@ -148,8 +130,7 @@ two countries worked out the de-
 tails of truce agreements in 1956
 and 1973 but all important negoti-
 ations have always been conduct-
-
-_ ed second-hand.
+ed second-hand.
 
 Credit for the historic visit goes
 to Mr. Begin as well as to Mr.
@@ -162,79 +143,13 @@ progress toward peace, suggested
 the visit in an emotional speech
 before his Parliament 12 days ago.
 But it was Prime Minister Begin,
-with an equal Maiz for the dramat-
-ic, Who seized upon the offer,
+with an equal flair for the dramat-
+ic, who seized upon the offer,
 which was discounted by most Is-
 raelis and many others as just so
 much rhetoric. Two days later, in
-‘a broadcast on Israel’s Arabic
+a broadcast on Israel’s Arabic
 radio station, he addressed a plea
 for peace to the Egyptian people
 and told them that their leader
-was welcome in Israel,
-
-vice
-
-mane partie PPE AAMC ee bio wesmte
-
-| as forme:
-
-' China Jor
-' as British
-' held unio’
-
-- Tory gov!
-irre oe ‘Whe!
-
-Mr. Begi!
-who brou
-war by <
-than thes
-yet no $1}
-that may
-achieves —
-a hero tc
-Anotl
-ington. F
-the Unite
-them wha
-were part
-pressure ‘
-put the pr
-faction.
-At no
-with the |
-United St.
-the Arabs
-gone quit
-Palestiniar
-And >:
-disapprov
-dence, wr
-of its Isr
-Mr. Sada:
-his own §
-From.
-conventic
-could on.
-its own
-_ against I:
-militancy
-convincec
-require c.
-ly at last
-The
-has been
-in his yo.
-ing his «
-leader a-
-urgent ©
-the intr:
-start. Th
-bilities, «
-and Mr.
-ders.
-
-Flor
-Fhe Nev.
-
+was welcome in Israel.
