@@ -1,8 +1,10 @@
-Grab a quick yuan while
+date: October 30, 1982
+author: Barbara Slavin
+org: the Economist
+title: Grab a quick yuan while you can
+ready: true
 
-you can .
-
-FROM OUR PEKING CORRESPONDENT
+---
 
 For the one person out of five on earth
 who is a Chinese peasant, life could only
@@ -10,22 +12,14 @@ get better after Chairman Mao’s time;
 and it has. (China’s new census says that
 there are 1.008 billion Chinese of whom
 four fifths are peasants.) Some of the
-improvements have been dramatic. En-
-
-couraged by higher prices for their pro-
-ducts and by what amounts to an aban-
-donment of collective farming, Chinese
+improvements have been dramatic. Encouraged by higher prices for their products and by what amounts to an abandonment of collective farming, Chinese
 peasants have doubled their incomes in
 five years (to $130 a head) and boosted
-the living standards of the nation. Chi-
-nese newspapers are full of self-congratu-
-latory articles about the record harvest
+the living standards of the nation. Chinese newspapers are full of self-congratulatory articles about the record harvest
 expected this year.
 
-China has become a land of relative
-plenty as a result of the decision to “first
-feed the people, second build the coun-
-try’, as Mr Hu Yaobang, the party’s
+China has become a land of relative plenty as a result of the decision to “first
+feed the people, second build the country’, as Mr Hu Yaobang, the party’s
 secretary-general, put it at last month’s
 party congress. The prices the state pays
 for agricultural goods were raised by
@@ -38,31 +32,25 @@ bility for deciding what to plant and how
 to allocate the surplus.
 
 Under this so-called “responsibility
-system”, which has a counterpart in in-
-dustry, the more a peasant produces, the
+system”, which has a counterpart in industry, the more a peasant produces, the
 more he earns. At first, only poorer
 regions were allowed to devolve responsi-
 bility for decision-making and profit-tak-
 ing down from the team to individual
-
-THE ECONOMIST OCTOBER 30, 1982
-
 farm families. But now the “household
 responsibility system’’ has spread to 45%
 of China’s production teams. It is not
 quite private farming, since nobody owns
 his land, but it is near enough to give
 peasants a big new incentive to work.
+
 The trouble is that the incentive system
 is not without costs. It has tempted profit-
 seeking farmers to shift land out of grain
 and into cash crops such as cotton and
 tobacco. The government has had to
-offer new incentives—access to ferti-
-lisers, farm tools, even bicycles—to stop
-peasants reducing cereal acreage. Farm-
-
-ers tend to use less fertiliser because it
+offer new incentives—access to fertilisers, farm tools, even bicycles—to stop
+peasants reducing cereal acreage. Farmers tend to use less fertiliser because it
 costs so much. Seeing the new value of
 extra manpower, families are ignoring
 the one-child norm of the family planners
@@ -72,7 +60,7 @@ ing out of a big pot”, peasants are reluc-
 tant to look beyond the next harvest.
 
 A radio broadcast in Guangxi province
-recently noted that peasants were “‘will-
+recently noted that peasants were “will-
 ing to do only things that benefit them in
 the short term and do not want to under-
 take projects from which they will benefit
@@ -85,53 +73,44 @@ The press has been complaining about
 the high cost of subsidies on food. Some
 observers think that subsidies will be cut
 but one noted that “Chinese farmers
+have always taken it in the neck and are
+just worrying that it will happen again”.
 
-From rags to riches in Dazhai
+Rural party officials who have been
+stripped of their power over production
+decisions frequently try to sabotage the
+responsibility system. In ome case of
+spiteful over-zealousness Officials in An-
+hui province arrested Wang Quanjing,
+whose six-member household had earned
+3,000 yuan ($1,500) last.year, mostly by
+producing baskets, tea, herbal medicines
+and bamboo. Mr Wang’s supposed crime,
+besides making so much money, was
+hiring people outside his family to help
+him to do it. This is now legal but still
+unusual. A local radio noted that since
+the employees had all volunteered to
+work and been paid for it, “such a
+practice cannot be looked upon as exploi-
+tation”. Still, it took the intervention of a
+county party official before Mr Wang was
+released.
 
-FROM A SPECIAL CORRESPONDENT
-
-Dazhai, in the Taihang mountains in
-northern China, was Chairman Mao’s
-favourite commune. Its peasants were
-praised for putting party before personal
-profit, for disdaining private plots in
-favour of communal labour. Other Chi-
-nese were constantly pressed to “learn
-from Dazhai”. Thousands of visitors to
-China were taken to this showpiece of
-communism.
-
-When Mao died, Dazhai was revealed
-to have been “a fabrication, an exagger-
-ation, confected by self-aggrandising lo-
-cal and national leaders”. The son of the
-commune leader Chen Yonggui was ex-
-posed as a rapist and blackmailer. Chen
-
-himself, who had made it to the politbu- .
-
-TO, was accused of misusing his power.
-
-Little more was heard of the disgraced
-commune until September when the
-
-' Shanxi Daily, Dazhai’s local paper, said
-
-that Dazhai had gone over to Mr Deng
-Xiaoping’s ‘‘responsibility system’,
-which allows peasants to keep some of
-their produce for private sale at the best
-price they can obtain.
-
-The slogan ‘‘Learn from Dazhai”’ has.
-almost vanished from China’s walls, ei-
-ther painted over, chipped off, or
-bleached into a ghostly reminder. The
-commune once famed for its austerity is
-now being publicised’as a place where
-1,068 families “make their fortunes by
-hard work’. Not for the first time,
-Chinese _peasants are learning that
-adaptability is a quality to be cultivated.
-
-45
+Inequalities—between families and be-
+tween regions—are bound to increase so
+long as China allows farmers to demon-
+strate differences of intelligence, appli-
+cation and luck. The resentment this
+leads to should be containable so long as
+the profits are coming in. The worry is
+that Chinese agriculture may be entering
+a period of diminishing returns. Output
+has risen by nearly a third since 1977. But
+this year it will go up by only 4%, even if
+the harvest tops the 1979 record of 337m
+tonnes of grain. Experts say the rate of
+increase will continue to decline because
+all the easy gains have already been
+made. Chinese farmers may be right to
+grab a quick yuan while they can.

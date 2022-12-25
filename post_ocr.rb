@@ -11,7 +11,7 @@ Dir.glob('ocr/*.txt').each do |f|
     if metadata.delete('ready') == 'true'
       next if articles.any? { |a| a["title"] == metadata["title"] }
       articles << metadata.merge(
-        "text" => text.gsub("\n\n", "<br><br>").strip
+        "text" => text.gsub("\n\n", "<br><br>").gsub("-\n", "").strip
       )
       puts articles[-1]
     end
