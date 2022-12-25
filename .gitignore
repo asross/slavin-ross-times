@@ -1,1 +1,4 @@
 articles/*.pdf
+ocr/*.png
+ocr/*.jpg
+*.sw[a-z]
