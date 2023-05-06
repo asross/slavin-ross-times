@@ -1,4 +1,5 @@
-articles/*.pdf
+articles/**/*.pdf
+articles/**/*.html
 ocr/*.png
 ocr/*.jpg
 *.sw[a-z]

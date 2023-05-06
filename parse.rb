@@ -57,6 +57,6 @@ end
 
 articles = Dir.glob('articles/*.pdf').map { |f| Article.new(PDF::Reader.new(f)) }
 
-File.open('articles.json', 'w') do |f|
+File.open('articles_from_pdf.json', 'w') do |f|
   f.write(JSON.pretty_generate(articles.map(&:as_json)))
 end
