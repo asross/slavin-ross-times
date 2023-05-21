@@ -80,7 +80,7 @@ p {
   align-self: flex-end;
 }
 
-#sort, .weatherforcastbox {
+select, .weatherforcastbox {
   border: 3px double;
   padding: 10px 15px 10px 15px;
   line-height: 1.42857142857rem;
@@ -94,7 +94,7 @@ p {
   left: 1rem;
 }
 
-#sort {
+select {
   font-family: 'Droid Serif', serif;
   font-size: 1rem;
   background: #f9f7f1;

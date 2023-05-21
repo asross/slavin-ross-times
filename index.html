@@ -17,9 +17,14 @@
             <label>
               <select id='sort'>
                 <option value='chrono'>Chronological</option>
+                <option value='revchron'>Reverse Chron.</option>
                 <option value='title'>Sort by title</option>
                 <option value='author'>Sort by author</option>
                 <option value='random'>Random order</option>
+              </select>
+
+              <select id='paper'>
+                <option value='all'>All Papers</option>
               </select>
             </label>
           </div>
@@ -70,7 +75,47 @@ $(document).ready(() => {
     const $columns = $('.columns');
 
     $.getJSON('articles.json', articles => {
-        articles.sort((a,b) => Date.parse(a.date) - Date.parse(b.date));
+        const sortArticles = (order) => {
+            if (order == 'random') {
+              articles.sort(() => Math.random() - 0.5);
+            } else if (order == 'chrono') {
+              articles.sort((a,b) => Date.parse(a.date) - Date.parse(b.date));
+            } else if (order == 'revchron') {
+              articles.sort((a,b) => Date.parse(b.date) - Date.parse(a.date));
+            } else if (order == 'author') {
+              articles.sort((a,b) => strcomp(a.author,b.author));
+            } else if (order == 'title') {
+              articles.sort((a,b) => strcomp(a.title,b.title));
+            } else {
+              articles.sort((a,b) => Date.parse(a.date) - Date.parse(b.date));
+            }
+        };
+
+        sortArticles(new URLSearchParams(location.search).get('sort'));
+        $('#sort').val(new URLSearchParams(location.search).get('sort'));
+
+        const paperNames = {
+          'the Los Angeles Times': 'LA Times',
+          'United Press International': 'UPI',
+          'the New York Times': 'NY Times',
+          'the St. Petersburg Times': 'St. P-burg',
+          'the Seattle Times': 'Seattle',
+          'the Economist': 'Economist'
+        };
+
+        const papers = new Set();
+
+        articles.forEach((article, i) => {
+          papers.add(article.org);
+        });
+
+        papers.forEach(paper => {
+            $('#paper').append(`<option value='${paper}'>${paperNames[paper] || paper}</option>`);
+        });
+
+        $('#paper').val(
+          new URLSearchParams(location.search).get('paper')
+        );
 
         const renderArticles = (forceRerender) => {
           const width = $(window).width();
@@ -87,7 +132,12 @@ $(document).ready(() => {
 
           const columns = Array.from($('.column'));
 
+          const paper = $('#paper').val();
+
           articles.forEach((article, i) => {
+              if (paper && paper != 'all' && paper != article.org) {
+                  return;
+              }
               // Add article to shortest column
               columns.sort((a, b) => {
                 const h1 = $(a).height() + parseInt($(a).data('index'));
@@ -97,21 +147,24 @@ $(document).ready(() => {
               const column = $(columns[0]);
               column.append(articleHtml(article));
           });
+
         }
 
         renderArticles(true);
 
+        $('#paper').change(ev => {
+            const params = new URLSearchParams(location.search);
+            params.set('paper', $(ev.currentTarget).val());
+            history.replaceState({}, '', `${location.pathname}?${params}`);
+            renderArticles(true);
+        });
+
         $('#sort').change(ev => {
             const order = $(ev.currentTarget).val();
-            if (order == 'random') {
-              articles.sort(() => Math.random() - 0.5);
-            } else if (order == 'chrono') {
-              articles.sort((a,b) => Date.parse(a.date) - Date.parse(b.date));
-            } else if (order == 'author') {
-              articles.sort((a,b) => strcomp(a.author,b.author));
-            } else if (order == 'title') {
-              articles.sort((a,b) => strcomp(a.title,b.title));
-            }
+            sortArticles(order);
+            const params = new URLSearchParams(location.search);
+            params.set('sort', $(ev.currentTarget).val());
+            history.replaceState({}, '', `${location.pathname}?${params}`);
             renderArticles(true);
         });
 
