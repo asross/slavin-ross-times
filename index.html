@@ -91,8 +91,13 @@ $(document).ready(() => {
             }
         };
 
-        sortArticles(new URLSearchParams(location.search).get('sort'));
-        $('#sort').val(new URLSearchParams(location.search).get('sort'));
+        const initSort = new URLSearchParams(location.search).get('sort');
+
+        sortArticles(initSort);
+
+        if (initSort) {
+          $('#sort').val(new URLSearchParams(location.search).get('sort'));
+        }
 
         const paperNames = {
           'the Los Angeles Times': 'LA Times',
@@ -113,9 +118,11 @@ $(document).ready(() => {
             $('#paper').append(`<option value='${paper}'>${paperNames[paper] || paper}</option>`);
         });
 
-        $('#paper').val(
-          new URLSearchParams(location.search).get('paper')
-        );
+        const initPaper = new URLSearchParams(location.search).get('paper');
+
+        if (initPaper) {
+          $('#paper').val(initPaper);
+        }
 
         const renderArticles = (forceRerender) => {
           const width = $(window).width();

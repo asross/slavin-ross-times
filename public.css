@@ -279,7 +279,7 @@ select {
     margin-top: 5px;
   }
 
-  #sort {
+  select {
     padding-top: 7px;
     padding-bottom: 7px;
   }
